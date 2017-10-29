@@ -14,11 +14,11 @@
       repo: 'alijaya/simplatest',
 
       // Netlify auth adapter, initialize with your Netlify site name
-      auth: new SimplaNetlify({ site: 'mysite' }),
+      auth: new SimplaNetlify({ site: 'alijaya-simplatest' }),
 
       // Public content source (optional)
       // Defaults to fetching directly from Github
-      source: 'https://mysite.netlify.com'
+      source: 'https://alijaya-simplatest.netlify.com'
 
     });
   </script>
@@ -30,7 +30,11 @@
 </head>
 
 <body>
+  <!-- Block of editable richtext -->
+  <simpla-text path="/text"></simpla-text>
 
+  <!-- An editable image -->
+  <img is="simpla-img" path="/section/img">
 </body>
 
 </html>
